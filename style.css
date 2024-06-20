@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 body {
@@ -16,13 +17,14 @@ body {
 }
 
 #board {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   display: flex;
   flex-direction: column;
-  border: 1px solid grey ;
+  border: 1px solid grey;
   background-color: #fff;
   margin-bottom: 2rem;
+  box-shadow: 10px 10px 1rem hsl(0 0% 0% / 35%);
 }
 
 .controls {
@@ -32,7 +34,25 @@ body {
 }
 
 .controls button {
-  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 1.5rem;
+  background-color: hsl(165 45% 70%);
+  box-shadow: 0 0 0.7rem hsl(0 0% 0% / 35%);
+  color: hsl(144 30% 19%);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.025;
+  transition: all 0.1s linear;
+}
+
+button:active {
+  scale: 0.99;
+  background-color: hsl(165 25% 50%);
 }
 
 .board-size {
@@ -46,6 +66,7 @@ body {
 
 .size-label {
   margin-left: 1rem;
+  color: white;
 }
 
 .row {
