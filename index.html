@@ -3,10 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Etch-A-Sketch</title>
   </head>
   <body>
+
+    <div class="board-size">
+      <label for="size-select" class="size-label"></label>
+      <input type="range" id="size-control" min="2" max="64" value="16">
+    </div>
+
     <div id="board"></div>
-    <script type="module" src="/main.js"></script>
+
+    <div class="controls">
+      <button class="reset">Reset</button>
+      <button class="random">Random</button>
+      <button class="erase">Erase</button>
+    </div>
+
+    <script src="/main.js"></script>
   </body>
 </html>
